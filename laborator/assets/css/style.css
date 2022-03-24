@@ -1,0 +1,228 @@
+body{
+	margin: 0 0;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: #f0f0f0;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+}
+
+nav ul li{
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+
+header hr{
+	margin: 0 0;
+}
+
+main{
+	}
+
+.rectangle-country{
+	flex: 1;
+	width: 370px;
+	height: 600px;
+	margin: 50px 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+.rectangle-country.active{
+	flex: 10;
+	transition: all 0.7s ease-in;
+}
+
+.rectangle-country h2{
+	color: #f7f3d4;
+	text-align: center;
+	font-size: 34px;
+	margin-bottom: 300px;
+}
+
+.rectangle-country ul li{
+	color: #f7f3d4;
+	font-size: 18px;
+	margin-bottom: 25px;
+	opacity: 0;
+}
+
+.rectangle-country.active ul li{
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out 0.4s;
+}
+
+.new-york{
+	background-image: url("../images/new-york-main.jpg");
+
+}
+
+.sydney{
+	background-image: url("../images/sydney-main.jpg");
+}
+
+.london{
+	background-image: url("../images/london.jpg");
+}
+
+.blur{
+	backdrop-filter: blur(2px);
+	width: 100%;
+	height: 100%;
+}
+
+.rectangle-country a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+
+footer{
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+
+.contacts ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	margin: 0;
+}
+
+.contacts img{
+	max-height: 50px;
+	max-width: 50px;
+	margin: 50px 50px;
+}
+
+.flex-container{
+	display: flex;
+	width: 100%;
+}
+
+.travelers{
+	max-width: 500px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.avatar{
+	border-radius: 50%;
+}
+
+.travelers .name{
+	font-size: 32px;
+}
+
+.travelers blockquote{
+	font-family: 'Dancing Script', cursive;
+	font-size: 24px;
+}
+
+.dot {
+	margin: 0 20px ;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover{
+	background-color: #969696;
+	cursor: pointer;
+}
+
+form{
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	border: 2px solid #a19f9d;
+	max-width: 800px;
+	height: 800px;
+	margin: 50px auto;
+	box-shadow: 0 0 50px 9px rgba(0,0,0,0.37);
+}
+
+form #name{
+	display: block;
+	width: 500px;
+	height: 50px;
+	font-size: 24px;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+form #mail{
+	display: block;
+	width: 500px;
+	height: 50px;
+	font-size: 24px;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+form textarea{
+	resize: none;
+	display: block;
+	width: 500px;
+	height: 200px;
+	font-size: 24px;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+form button{
+	display: block;
+	width: 500px;
+	height: 50px;
+	font-size: 24px;
+	margin: 20px auto;
+	background-color: #e03636;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+}
+
+form h3{
+	text-align: center;
+	font-size: 42px;
+}
+
+.methods{
+	display: flex;
+	padding: 20px 20px;
+	background-color: #e8e6e6;
+}
+
+.methods:hover{
+	background-color: #fff;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.methods img{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #a19f9d;
+	border-radius: 100%;
+	padding: 20px 20px;
+	margin-top: 50px;
+	margin-right: 25px;
+}
+
+.method-title{
+	font-size: 32px;
+	font-weight: 700;
+}
