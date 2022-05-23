@@ -10,43 +10,53 @@
 	<header>
 		<nav>
 			<h1>Gallery</h1>
-			<ul>
-				<li>
-					New York
-				</li>
-				<li>
-					Sydnei
-				</li>
-				<li>
-					London
-				</li>
-			</ul>
+			<div class="dropdown">
+				<a href="#" class="dropbtn"><span >City</span></a>
+				<div class="dropdown-content">
+					<a href="pages/new-york.html">New York</a>
+					<a href="#">Sydney</a>
+					<a href="#">London</a>
+				</div>
+			</div>
+			<a href="#travelers">
+				Quotes
+			</a>
+			<a href="#treveling-methods">
+				Travel
+			</a>
+			<a href="#contact">
+				Contact
+			</a>
 		</nav>
 		<hr>
 	</header>
 	<main>
-		<div class="flex-container">
-			<div class="rectangle-country new-york active">
+		<div class="sort-method">
+			<button class="sort-area">Sort by Area</button>
+			<button class="sort-year">Sort by Establishment year</button>
+			<button class="sort-pop">Sort by Population</button>
+		</div>
+		<div class="flex-container" id="test">
+			<div class="rectangle-country new-york">
 			<div class="blur">
-				<a href="pages/new-york.html"></a>
 				<h2>New York</h2>
 				<ul>
 					<li>
 						Mayor: Eric Adams Trending
 					</li>
 					<li>
-						Area: 783.8 km²
+						Area: <span class="area">7838</span> km²
 					</li>
 					<li>
-						Establishment: 1624
+						Establishment: <span class="foundation">1624</span>
 					</li>
 					<li>
-						Population: 8,419 million (2019)
+						Population: <span class="pop">8419</span> million (2019)
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="rectangle-country sydney">
+		<div class="rectangle-country sydney active">
 			<div class="blur">
 				<h2>Sydney</h2>
 				<ul>
@@ -54,13 +64,12 @@
 						Mayor: Clover Moore
 					</li>
 					<li>
-						Area: 12144,6 km²
+						Area: <span class="area">121446</span> km²
 					</li>
 					<li>
-						Establishment: 1788
-					</li>
+						Establishment: <span class="foundation">1788</span>
 					<li>
-						Population:	4.627.345
+						Population:	<span class="pop">4627345</span>
 					</li>
 				</ul>
 			</div>
@@ -73,33 +82,32 @@
 						Mayor: Sadiq Khan
 					</li>
 					<li>
-						Area: 1,572 km²
+						Area: <span class="area">1572</span> km²
 					</li>
 					<li>
-						Establishment: 47 AD
+						Establishment: <span class="foundation">47</span> AD
 					</li>
 					<li>
-						Population: 8,308,369
+						Population: <span class="pop">8308369</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="rectangle-country new-york">
 			<div class="blur">
-				<a href="pages/new-york.html"></a>
 				<h2>New York</h2>
 				<ul>
 					<li>
 						Mayor: Eric Adams Trending
 					</li>
 					<li>
-						Area: 783.8 km²
+						Area: <span class="area">7838</span> km²
 					</li>
 					<li>
-						Establishment: 1624
+						Establishment: <span class="foundation">1624</span>
 					</li>
 					<li>
-						Population: 8,419 million (2019)
+						Population: <span class="pop">8419</span> million (2019)
 					</li>
 				</ul>
 			</div>
@@ -112,13 +120,13 @@
 						Mayor: Clover Moore
 					</li>
 					<li>
-						Area: 12144,6 km²
+						Area: <span class="area">121446</span> km²
 					</li>
 					<li>
-						Establishment: 1788
+						Establishment: <span class="foundation">1788</span>
 					</li>
 					<li>
-						Population:	4.627.345
+						Population:	<span class="pop">4627345</span>
 					</li>
 				</ul>
 			</div>
@@ -131,35 +139,74 @@
 						Mayor: Sadiq Khan
 					</li>
 					<li>
-						Area: 1,572 km²
+						Area: <span class="area">1572</span> km²
 					</li>
 					<li>
-						Establishment: 47 AD
+						Establishment: <span class="foundation">47</span> AD
 					</li>
 					<li>
-						Population: 8,308,369
+						Population: <span class="pop">8308369</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 		</div>
-		
-		<div class="travelers">
 
-			<img class="avatar" src="assets/images/Mike-Tyson.jpg">
-			<h3>
+
+		<div class="travelers" id="travelers">
+			<button class="nxtBtn">
+				<img src="assets/images/arrow.png" alt="">
+			</button>
+			<button class="prevBtn">
+				<img src="assets/images/arrow.png" alt="">
+			</button>
+			<div class="sliderObj">
+				<img class="avatar" src="assets/images/Mike-Tyson.jpg">
+				<h3>
 				<span class="name">
 					Mike Tyson
 				</span>
-			</h3>
-			<blockquote>
-				"The world is a book and those who do not travel read only one page."
-			</blockquote>
-			<span class="dot"></span>
-			<span class="dot"></span>
-			<span class="dot"></span>
+				</h3>
+				<blockquote>
+					"The world is a book and those who do not travel read only one page."
+				</blockquote>
+			</div>
+			<div class="sliderObj">
+				<img class="avatar" src="assets/images/Ronaldo.jpg">
+				<h3>
+				<span class="name">
+					Cristiano Ronaldo
+				</span>
+				</h3>
+				<blockquote>
+					"The world is a book and those who do not travel read only one page."
+				</blockquote>
+			</div>
+			<div class="sliderObj">
+				<img class="avatar" src="assets/images/Mike-Tyson.jpg">
+				<h3>
+				<span class="name">
+					Dan Frunze
+				</span>
+				</h3>
+				<blockquote>
+					"The world is a book and those who do not travel read only one page."
+				</blockquote>
+			</div>
+			<div class="sliderObj">
+				<img class="avatar" src="assets/images/Mike-Tyson.jpg">
+				<h3>
+				<span class="name">
+					Mike Tyson
+				</span>
+				</h3>
+				<blockquote>
+					"The world is a book and those who do not travel read only one page."
+				</blockquote>
+			</div>
 		</div>
-		<div class="treveling-methods">
+		<div class="treveling-methods" id="treveling-methods">
+			<h3>Where you want to travel</h3>
 			<div class="methods">
 				<img src="assets/images/sea.png">
 				<p><span class="method-title">Sea</span><br>The sea moderates Earth's climate and has important roles in the water cycle,
@@ -209,7 +256,7 @@
 					to destructive tsunamis, as can volcanoes, huge landslides, or the impact of large meteorites.</p></p>
 			</div>
 		</div>
-		<form>
+		<form id="contact">
 			<h3>Contact US</h3>
 			<input type="text" id="name" placeholder="Name">
 			<input type="email" id="mail" placeholder="Email">

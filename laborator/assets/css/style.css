@@ -2,27 +2,62 @@ body{
 	margin: 0 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 nav{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	background-color: #f0f0f0;
 }
 
-nav ul{
-	display: flex;
-	list-style: none;
-	justify-content: space-around;
-}
-
-nav ul li{
-	padding-right: 30px;
-	padding-left: 30px;
-	padding-top: 5px;
+nav a{
+	padding-top: 30px;
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
 }
 
 header hr{
 	margin: 0 0;
 }
+
+.dropbtn {
+	color: black;
+	padding: 0 25px;
+	position: relative;
+	top: 50%;
+	font-size: 16px;
+	border: none;
+	font-size: 24px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 main{
 	}
@@ -55,6 +90,19 @@ main{
 	font-size: 18px;
 	margin-bottom: 25px;
 	opacity: 0;
+}
+
+.sort-method button{
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+.sort-method button:hover{
+	cursor: pointer;
 }
 
 .rectangle-country.active ul li{
@@ -114,13 +162,22 @@ footer{
 }
 
 .travelers{
-	max-width: 500px;
-	margin: 50px auto;
 	text-align: center;
+	display: flex;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.sliderObj{
+	display: none;
+	margin: 0 auto;
 }
 
 .avatar{
 	border-radius: 50%;
+	max-width: 250px;
+	max-height: 500px;
 }
 
 .travelers .name{
@@ -201,6 +258,12 @@ form h3{
 	font-size: 42px;
 }
 
+.treveling-methods h3{
+	text-align: center;
+	font-size: 34px;
+	font-weight: 700;
+}
+
 .methods{
 	display: flex;
 	padding: 20px 20px;
@@ -225,4 +288,31 @@ form h3{
 .method-title{
 	font-size: 32px;
 	font-weight: 700;
+}
+
+.nxtBtn{
+	position: absolute;
+	right: 0px;
+	border: none;
+	cursor: pointer;
+	padding-top: 100px;
+}
+
+.nxtBtn img{
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.prevBtn{
+	position: absolute;
+	left: 0px;
+	border: none;
+	cursor: pointer;
+	padding-top: 100px;
+}
+
+.prevBtn img{
+	max-width: 100px;
+	max-height: 100px;
+	transform: rotate(180deg);
 }
